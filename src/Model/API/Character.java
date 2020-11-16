@@ -1,5 +1,6 @@
 package Model.API;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Map;
 
@@ -30,10 +31,43 @@ public abstract class Character {
     private long attackSpeed;//攻击速度
     private long castSpeed;//施法速度
     //其他
-    private Map<String,Integer> knowledge;//知识名称 等级
-    private Map<String,Integer> skills;//技能名字 等级
-    private Map<String,Integer> roles;//职业名字 等级
-    private LinkedList<String> titles;//称号
+
+    private ArrayList<Knowledge> knowledge;//知识
+    private ArrayList<Skill> skills;//技能
+    private ArrayList<Role> roles;//职业
+    private ArrayList<Title> titles;//称号
+
+    public ArrayList<Knowledge> getKnowledge() {
+        return knowledge;
+    }
+
+    public void setKnowledge(ArrayList<Knowledge> knowledge) {
+        this.knowledge = knowledge;
+    }
+
+    public ArrayList<Skill> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(ArrayList<Skill> skills) {
+        this.skills = skills;
+    }
+
+    public ArrayList<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(ArrayList<Role> roles) {
+        this.roles = roles;
+    }
+
+    public ArrayList<Title> getTitles() {
+        return titles;
+    }
+
+    public void setTitles(ArrayList<Title> titles) {
+        this.titles = titles;
+    }
 
     public long getShield() {
         return shield;
@@ -91,14 +125,6 @@ public abstract class Character {
         this.castSpeed = castSpeed;
     }
 
-    public Map<String, Integer> getKnowledge() {
-        return knowledge;
-    }
-
-    public void setKnowledge(Map<String, Integer> knowledge) {
-        this.knowledge = knowledge;
-    }
-
     public long getStrength() {
         return strength;
     }
@@ -115,21 +141,6 @@ public abstract class Character {
         this.intelligence = intelligence;
     }
 
-    public Map<String, Integer> getSkills() {
-        return skills;
-    }
-
-    public void setSkills(Map<String, Integer> skills) {
-        this.skills = skills;
-    }
-
-    public Map<String, Integer> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Map<String, Integer> roles) {
-        this.roles = roles;
-    }
 
     public long getCurrentHP() {
         return currentHP;
@@ -147,22 +158,6 @@ public abstract class Character {
         this.currentMP = currentMP;
     }
 
-
-    public LinkedList<String> getTitles() {
-        return titles;
-    }
-
-    public void setTitles(LinkedList<String> titles) {
-        this.titles = titles;
-    }
-
-    public LinkedList<String> getTitle() {
-        return titles;
-    }
-
-    public void setTitle(LinkedList<String> titles) {
-        this.titles = titles;
-    }
 
     public String getName() {
         return name;
