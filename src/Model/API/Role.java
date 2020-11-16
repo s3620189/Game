@@ -1,6 +1,6 @@
 package Model.API;
 
-public class Role {
+public abstract class Role {
 
 
 

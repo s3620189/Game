@@ -1,4 +1,4 @@
 package Model.API;
 
-public class Title {
+public abstract class Title {
 }

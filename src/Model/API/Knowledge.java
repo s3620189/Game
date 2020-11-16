@@ -1,5 +1,5 @@
 package Model.API;
 
-public class Knowledge {
+public abstract class Knowledge {
 
 }

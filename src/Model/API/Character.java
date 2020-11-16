@@ -30,8 +30,8 @@ public abstract class Character {
     private long moveSpeed;//移动速度
     private long attackSpeed;//攻击速度
     private long castSpeed;//施法速度
-    //其他
 
+    //其他
     private ArrayList<Knowledge> knowledge;//知识
     private ArrayList<Skill> skills;//技能
     private ArrayList<Role> roles;//职业
