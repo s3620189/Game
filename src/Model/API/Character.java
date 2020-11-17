@@ -32,6 +32,8 @@ public class Character {
 
 
     private String name;//角色名字
+    private int level;
+    private long exp;
     //普通属性
     private Map<String,Long> level_1_attributes;
     private Map<String,Long> original_level_1_attributes;
@@ -44,6 +46,29 @@ public class Character {
     //高阶属性
     private Map<String,Long> level_4_attributes;
     private Map<String,Long> original_level_4_attributes;
+
+    //其他
+
+    private ArrayList<Knowledge> knowledge;//知识
+    private ArrayList<Skill> skills;//技能
+    private ArrayList<Role> roles;//职业
+    private ArrayList<Title> titles;//称号
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public long getExp() {
+        return exp;
+    }
+
+    public void setExp(long exp) {
+        this.exp = exp;
+    }
 
     public Map<String, Long> getLevel_1_attributes() {
         return level_1_attributes;
@@ -108,12 +133,7 @@ public class Character {
     public void setOriginal_level_4_attributes(Map<String, Long> original_level_4_attributes) {
         this.original_level_4_attributes = original_level_4_attributes;
     }
-//其他
 
-    private ArrayList<Knowledge> knowledge;//知识
-    private ArrayList<Skill> skills;//技能
-    private ArrayList<Role> roles;//职业
-    private ArrayList<Title> titles;//称号
 
     public ArrayList<Knowledge> getKnowledge() {
         return knowledge;
