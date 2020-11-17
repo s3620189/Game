@@ -1,4 +1,8 @@
 package Model.API;
 
-public abstract class AttackEffects {
+public  class AttackEffects {
+    private String name;
+    private String info;
+
+
 }

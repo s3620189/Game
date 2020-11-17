@@ -1,4 +1,4 @@
 package Model.API;
 
-public abstract class Battlefield {
+public  class Battlefield {
 }
